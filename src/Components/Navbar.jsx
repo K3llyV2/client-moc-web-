@@ -1,4 +1,4 @@
-import dayjs, {isDayjs} from "dayjs";
+import dayjs from "dayjs";
 
 import React from 'react'
 import {navIcons, navLinks} from "#constants/index.js";
