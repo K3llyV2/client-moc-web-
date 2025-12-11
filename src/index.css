@@ -112,15 +112,15 @@ span {
         @apply flex gap-2;
 
         .close {
-            @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer;
+            @apply size-3.5  rounded-full bg-[#ff6157] cursor-pointer;
         }
 
         .minimize {
-            @apply size-3.5 rounded-full bg-[#ffc030];
+            @apply size-3.5 rounded-full bg-[#ffc030] cursor-pointer;
         }
 
         .maximize {
-            @apply size-3.5 rounded-full bg-[#2acb42];
+            @apply size-3.5 rounded-full bg-[#2acb42] cursor-pointer;
         }
     }
 
@@ -176,7 +176,7 @@ span {
         @apply w-xl absolute top-32 left-1/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
         h2 {
-            @apply font-bold text-sm text-center w-full;
+            @apply font-light text-lg  font-georama text-center w-full;
         }
 
         .techstack {
