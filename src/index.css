@@ -8,20 +8,29 @@
 
 html,
 body {
-    width: 100dvw;
-    overflow: hidden;
-    height: 100dvh;
-    background-image: url("/images/wallpaper.png");
+    width: 100%;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    {/* background-image: url("/images/adrian-3.jpeg")*/}
+    background-color: orangered;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    scroll-behavior: smooth;
 }
+
 span {
      font-family: "Georama", sans-serif;
      font-variation-settings: 'wght' 400;
  }
 
-
+#heropage{
+    background-image: url("/cartoons/romanianchef.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 @theme {
     --font-georama: "Georama", sans-serif;
@@ -43,11 +52,11 @@ span {
 
 @layer base {
     main {
-        @apply w-dvw h-dvh overflow-hidden;
+        @apply w-full min-h-dvh overflow-visible;
     }
 
     nav {
-        @apply flex justify-between items-center bg-white/50 backdrop-blur-3xl p-2 px-5 select-none;
+        @apply flex justify-between items-center bg-none backdrop-blur-[5px]   p-2 px-5 select-none;
 
         div {
             @apply flex items-center max-sm:w-full max-sm:justify-center gap-5;
@@ -66,7 +75,7 @@ span {
         }
 
         time {
-            @apply text-sm font-medium text-black;
+            @apply text-sm font-medium text-white;
         }
     }
 }
@@ -83,7 +92,7 @@ span {
             @apply sm:hidden m-7 bg-red-300/20 backdrop-blur-lg p-3 rounded-md absolute top-10;
 
             p {
-                @apply flex-1 text-[16px] text-center font-georama text-gray-400;
+                @apply flex-1 text-[16px] text-center font-georama text-black;
             }
         }
     }
@@ -122,6 +131,38 @@ span {
         .maximize {
             @apply size-3.5 rounded-full bg-[#2acb42] cursor-pointer;
         }
+    }
+
+    /* Generic resizable window utilities */
+    .resizable-window {
+        /* Allow internal sections to fill and scroll as needed */
+        @apply overflow-hidden;
+    }
+
+    .resizable-window > div {
+        /* Most window components start with a header then content; ensure content areas can size correctly */
+        @apply h-full;
+    }
+
+    .resize-handle {
+        /* Bottom-right handle for resizing */
+        @apply absolute right-0 bottom-0 z-[2] bg-transparent;
+        width: 14px;
+        height: 14px;
+        cursor: se-resize;
+    }
+
+    /* Optional visual cue: a subtle diagonal using borders */
+    .resize-handle::after {
+        content: "";
+        position: absolute;
+        right: 3px;
+        bottom: 3px;
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid rgba(0,0,0,0.2);
+        border-bottom: 2px solid rgba(0,0,0,0.2);
+        pointer-events: none;
     }
 
     #window-header {
@@ -404,3 +445,8 @@ span {
         }
     }
 }
+    #about {
+        img {
+             @apply w-full h-full object-cover;
+         }
+    }

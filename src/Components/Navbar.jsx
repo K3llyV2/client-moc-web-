@@ -11,9 +11,14 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div>
-                <img src="/images/logo.svg" alt="logo" />
-                <p className="font-bold"> Jasmine Zuri's Portfolio</p>
+            <div className="backdrop-blur-2xl" >
+                <img src="/images/knifesvgfinal.svg"
+                     alt="logo"
+                     className="w-10 "
+                     draggable="true"
+                     onClick={()=>openWindow('home')}
+                />
+                <p className="font-thin"> Jasmine<p className="font-medium">Zuri</p> </p>
 
                 <ul>
                     {navLinks.map(({id, name,type}) => (
@@ -23,6 +28,9 @@ const Navbar = () => {
                         )
                     )}
                 </ul>
+                <a href="#newpage" title="about" className="font-sans text-medium font-thin" >
+                    About me
+                </a>
             </div>
             <div>
                 <ul>

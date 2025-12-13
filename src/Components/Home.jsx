@@ -40,7 +40,7 @@ const Home = () => {
                         onClick={()=>handleOpenProjectFinder(project)}
                     >
                         <img src="/images/folder.png" alt="projec.name"/>
-                        <p >{project.name}</p>
+                        {/*<p>{project.name}</p>*/}
                     </li>
                 ))}
             </ul>
