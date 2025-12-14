@@ -31,6 +31,13 @@ const Navbar = () => {
                 <a href="#newpage" title="about" className="font-sans text-medium font-thin" >
                     About me
                 </a>
+                <a href="#education" title="education" className="font-sans text-medium font-thin" >
+                    Education
+                </a>
+                <a href="#experience" title="experience" className="font-sans text-medium font-thin">
+                    Experience
+                </a>
+                
             </div>
             <div>
                 <ul>

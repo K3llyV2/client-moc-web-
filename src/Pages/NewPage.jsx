@@ -3,9 +3,9 @@ import { Briefcase, Code, User } from "lucide-react";
 
 const NewPage = () => {
     return (
-        <section id="newpage" className=" py-24 px-4 relative">
+        <section id="newpage" className=" py-24 px-4 relative bg-gradient-to-r from-purple-400 to-amber-300">
             {" "}
-            <div className="container mx-auto max-w-5xl">
+            <div className="container mx-auto max-w-5xl bg-gradient-to-r from-yellow-200 to-orange-400 p-12 rounded-3xl shadow-lime-400">
                 <h2 className="text-4xl md:text-4xl font-thin mb-12 text-center">
                     About <span className="font-thin"> Me</span>
                 </h2>
@@ -35,7 +35,7 @@ const NewPage = () => {
 
                     <div className="grid grid-cols-1 gap-6 rounded-3xl overflow-hidden shadow-lime-400">
                        <img
-                            src="/public/cartoons/womanchef.jpg"
+                            src="/cartoons/womanchef.jpg"
                             title="woman"
                        />
                     </div>

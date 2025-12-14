@@ -12,7 +12,7 @@ const Educationpage = () => {
                 <div className="space-y-6 flex flex-col md:flex-row gap-12 items-center ">
                     <div>
                         <img
-                        src="/public/cartoons/foodpan.jpg"
+                        src="/cartoons/foodpan.jpg"
                         title="food"
                         alt="food"
                         className=" w-full object-cover rounded-3xl shadow-lime-400"
@@ -29,7 +29,7 @@ const Educationpage = () => {
 
                             My formal training in culinary arts provided a strong foundation in classical cooking techniques, kitchen operations, food safety, and menu development. During my studies, I developed a disciplined approach to cooking, emphasizing precision, consistency, and respect for ingredients while exploring a wide range of global cuisines.
                         </p>
-                        <p className="font-thin font-georama border-none p-4 rounded-lg text-justify leading-relaxed text-white backdrop-grayscale-30 backdrop-blur-3xl">
+                        <p id="experience" className="font-thin font-georama border-none p-4 rounded-lg text-justify leading-relaxed text-white backdrop-grayscale-30 backdrop-blur-3xl">
                             <h1 className="text-4xl p-3 text-purple-500">Experience</h1>
 
                             Culinary Arts Chef
