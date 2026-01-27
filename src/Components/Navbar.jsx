@@ -18,7 +18,7 @@ const Navbar = () => {
                         draggable="true"
                         onClick={()=>openWindow('home')}
                     />
-                    <p className="font-thin "> Jasmine<p className="font-medium ">Zuri</p> </p>
+                    <p className="font-thin "> Jasmine<span className="font-medium ">Zuri</span> </p>
 
                     <ul className="px-15 font-thin "> 
                         {navLinks.map(({id, name,type}) => (

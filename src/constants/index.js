@@ -503,6 +503,8 @@ export const locations = {
     about: ABOUT_LOCATION,
     resume: RESUME_LOCATION,
     trash: TRASH_LOCATION,
+    education: { id: 4, type: "education", name: "Education", icon: "/icons/file.svg", kind: "folder", children: [] },
+    experience: { id: 5, type: "experience", name: "Experience", icon: "/icons/file.svg", kind: "folder", children: [] },
 };
 
 const INITIAL_Z_INDEX = 1000;
