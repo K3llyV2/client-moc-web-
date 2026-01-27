@@ -8,11 +8,11 @@ const Footer = () => {
             <p className="text-sm">&copy; {new Date().getFullYear()}  Jasmine Zuri - All rights reserved.</p>
             <p className="ml-auto text-sm">
                 <ul className="flex gap-4">
-                    <a href="#contactpage" className="hover:underline mr-4">Contact Me</a>
+                    <a href="contactpage" className="hover:underline mr-4">Contact Me</a>
                    
                 </ul>
             </p>
-             <a href="#heropage" className="ml-10 text-sm hover:">Back to Top</a>
+             <a href="Navbar" className="ml-10 text-sm hover:underline">Back to Top</a>
         </div>
         
     </footer>

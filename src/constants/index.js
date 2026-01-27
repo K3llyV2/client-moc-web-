@@ -16,6 +16,19 @@ const navLinks = [
         name: "Resume",
         type: "resume",
     },
+     {
+        id: 5,
+        name: "About",
+        type: "about",
+    }, {
+        id: 6,
+        name: "Education",
+        type: "education",
+    }, {
+        id: 7,
+        name: "Experience",
+        type: "experience",
+    },
 ];
 
 const navIcons = [

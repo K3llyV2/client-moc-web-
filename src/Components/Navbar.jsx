@@ -11,47 +11,37 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div className="backdrop-blur-2xl" >
-                <img src="/images/knifesvgfinal.svg"
-                     alt="logo"
-                     className="w-10 "
-                     draggable="true"
-                     onClick={()=>openWindow('home')}
-                />
-                <p className="font-thin"> Jasmine<p className="font-medium">Zuri</p> </p>
+                <div className="backdrop-blur-2xl" >
+                    <img src="/images/knifesvgfinal.svg"
+                        alt="logo"
+                        className="w-15 cursor-pointer "
+                        draggable="true"
+                        onClick={()=>openWindow('home')}
+                    />
+                    <p className="font-thin "> Jasmine<p className="font-medium ">Zuri</p> </p>
 
-                <ul>
-                    {navLinks.map(({id, name,type}) => (
-                        <li key={id} onClick={() => openWindow(type)}>
-                            <p>{name}</p>
-                        </li>
-                        )
-                    )}
-                </ul>
-                <a href="#newpage" title="about" className="font-sans text-medium font-thin" >
-                    About me
-                </a>
-                <a href="#education" title="education" className="font-sans text-medium font-thin" >
-                    Education
-                </a>
-                <a href="#experience" title="experience" className="font-sans text-medium font-thin">
-                    Experience
-                </a>
-                
-            </div>
-            <div>
-                <ul>
-                    {navIcons.map(({id, img}) => (
-                        <li key={id}>
-                            <img src={img} className="icon-hover" alt={`icon-${id}`} />
-                        </li>
-                    ))}
-                </ul>
+                    <ul className="px-15 font-thin "> 
+                        {navLinks.map(({id, name,type}) => (
+                            <li key={id} onClick={() => openWindow(type)}>
+                                <p>{name}</p>
+                            </li>
+                            )
+                        )}
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        {navIcons.map(({id, img}) => (
+                            <li key={id}>
+                                <img src={img} className="icon-hover" alt={`icon-${id}`} />
+                            </li>
+                        ))}
+                    </ul>
 
-                <time>
-                    {dayjs().format("ddd MMM D h:mm A")}
-                </time>
-            </div>
+                    <time>
+                        {dayjs().format("ddd MMM D h:mm A")}
+                    </time>
+                </div>
         </nav>
     )
 }

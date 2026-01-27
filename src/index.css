@@ -12,8 +12,10 @@ body {
     min-height: 100dvh;
     overflow-x: hidden;
     overflow-y: auto;
-    {/* background-image: url("/images/adrian-3.jpeg")*/}
-    background-color: orangered;
+    
+    /* background-image: url("/images/adrian-3.jpeg") */
+
+    background-color: slategrey;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,10 +28,11 @@ span {
  }
 
 #heropage{
-    background-image: url("/cartoons/romanianchef.jpg");
+    background-image: url(../public/cartoons/romanianchef.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 @theme {
@@ -70,7 +73,7 @@ span {
             @apply flex items-center gap-5 max-sm:hidden;
 
             p {
-                @apply text-sm cursor-pointer hover:underline transition-all;
+                @apply text-lg cursor-pointer hover:bg-red-300 transition-all;
             }
         }
 
